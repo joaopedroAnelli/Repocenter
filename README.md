@@ -13,6 +13,10 @@ O projeto tem incluso arquivos [Docker](https://www.docker.com/) e [Docker Compo
 ```
 $ cd repocenter
 $ npm install
+$ cd repocenter/api
+$ npm install
+$ cd repocenter/ui
+$ npm install
 $ docker-compose up
 ```
 
@@ -20,9 +24,9 @@ Este comando irá construir através do docker todas as imagens necessárias par
 
 Com isso você terá o projeto rodando em:
 
-- Frontend: [http:localhost:3000](http://0.0.0.0:3000)
-- API (Graphql Playground): [http:localhost:4001/graphql](http://0.0.0.0:4001/graphql)
-- Neo4j (Banco de dados): [http:localhost:7474](http://0.0.0.0:7474)
+- Frontend: [http://localhost:3000](http://0.0.0.0:3000)
+- API (Graphql Playground): [http://localhost:4001/graphql](http://0.0.0.0:4001/graphql)
+- Neo4j (Banco de dados): [http://localhost:7474](http://0.0.0.0:7474)
 
 ## Como subir os componentes separadamente
 ### Neo4j
