@@ -1,0 +1,9 @@
+type Repository {
+  repoId: ID! @id,
+  userSub: String!,
+  githubId: Int!,
+  name: String!,
+  url: String! @unique,
+  owner: String!,
+  owner_avatar: String!,
+}
