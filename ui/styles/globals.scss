@@ -1,3 +1,28 @@
 $primary: #2387ff;
 @import "~bulma/bulma";
 
+.mesh-gradient {
+      background-image:
+        radial-gradient(at 40% 20%, hsla(239,100%,74%,1) 0, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(40,100%,56%,1) 0, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(206,85%,93%,1) 0, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(233,100%,77%,1) 0, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(93,100%,70%,1) 0, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(194,100%,76%,1) 0, transparent 50%);
+}
+
+.notification {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  max-width: 200px;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.repo-card {
+  min-height: 150px;
+}
+

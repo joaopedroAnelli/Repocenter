@@ -12,7 +12,7 @@ export default function RepositoriesList(props) {
     );
   }
   return (
-    <div className="columns p-4">
+    <div className="columns p-4 is-multiline">
       {props.repos.map((repo) => {
         return <RepositoryLine key={repo.repoId} repo={repo} />;
       })}

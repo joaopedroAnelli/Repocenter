@@ -27,11 +27,11 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <section className="hero is-link is-fullheight-with-navbar has-background-primary">
+        <section className="hero is-link is-fullheight-with-navbar mesh-gradient">
           <div className="hero-body">
-            <p className="title has-text-weight-light">
+            <p className="title has-text-weight-light has-text-black-bis">
               Todos os seus repositórios,{" "}
-              <strong className="has-text-weight-bold">em um só lugar</strong>
+              <strong className="has-text-weight-bold">em um só lugar.</strong>
             </p>
           </div>
         </section>

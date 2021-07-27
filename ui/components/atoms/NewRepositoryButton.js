@@ -55,7 +55,12 @@ export default function NewRepositoryButton(props) {
       return false;
     }
 
-    getDataFromGithub(sendGithubResponseToDatabase, () => {});
+    const onError = () => {
+      isValid = false;
+      props.onValidationChange(false);
+      props.setValidationMessage("Link do github não encontrado.");
+    };
+    getDataFromGithub(sendGithubResponseToDatabase, onError);
   };
 
   function getDataFromGithub(onfulfilled, onError) {

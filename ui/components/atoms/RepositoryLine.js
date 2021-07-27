@@ -32,10 +32,10 @@ export default function RepositoryLine(props) {
   return (
     <div className="column is-4">
       <DeleteConfirmationModal repoName={repo.name} onConfirm={submitDestroy} />
-      <article className="media box">
+      <article className="media box repo-card">
         <figure className="media-left">
           <p className="image is-64x64">
-            <img src={repo.owner_avatar} />
+            <img className="is-rounded" src={repo.owner_avatar} />
           </p>
         </figure>
         <div className="media-content">

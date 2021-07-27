@@ -10,7 +10,7 @@ export default withPageAuthRequired(function repositorios() {
   const [validationMessage, setValidationMessage] = useState("");
 
   return (
-    <main className="has-background-white-ter">
+    <main className="has-background-white-ter main">
       <Navbar />
       <section className="section">
         <h1 className="title is-1">Repositorios</h1>

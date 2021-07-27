@@ -37,7 +37,10 @@ export default function SavedRepos(props) {
       return false;
     }
     const filteredRepos = allRepos.filter((repo) => {
-      return repo.name.includes(search) || repo.url.includes(search);
+      return (
+        repo.name.toLowerCase().includes(search.toLowerCase()) ||
+        repo.url.toLowerCase().includes(search.toLowerCase())
+      );
     });
 
     props.setRepos(filteredRepos);
